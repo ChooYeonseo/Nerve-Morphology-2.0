@@ -1,0 +1,2 @@
+# ignore venv files for running the codes locally
+.DS_Store
