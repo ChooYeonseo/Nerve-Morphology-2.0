@@ -1,6 +1,4 @@
 # Nerve Morphology Simulator: version 2.0
-</br>
-
 This program is developed to visualize the course of the saphenous nerve.  
 
 It is an additional tool created for the paper titled **"Anatomical Mapping and Electrode Placement Guidelines for Saphenous Nerve Conduction Studies: A Cadaveric Study."** by Dong Hwee Kim, Yeonseo Choo, Seoyoung Park, Jeongwon Mun
