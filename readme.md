@@ -1,8 +1,11 @@
 # Nerve Morphology Simulator 
 Version 2.0
 <div align="center">
-Developed by Yeonseo Choo
+Developed by **Yeonseo Choo**
 </div>
+</br>
+</br>
+</br>
 
 This program is developed to visualize the course of the saphenous nerve.  
 
