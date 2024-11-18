@@ -1,7 +1,7 @@
 # Nerve Morphology Simulator 
 Version 2.0
 <div align="center">
-Developed by **Yeonseo Choo**
+Developed by <strong>Yeonseo Choo</strong>
 </div>
 </br>
 </br>
