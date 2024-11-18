@@ -57,7 +57,7 @@ grid_points = np.c_[xx.ravel(), yy.ravel()]  # Flattened grid for vectorized ope
 
 
 # Plotting the heatmap
-plt.figure(figsize=(5, 8))
+plt.figure(figsize=(8, 8))
 plt.gca().set_aspect('equal')
 
 # Iterate over the lines
@@ -81,34 +81,16 @@ for i in name_list:
 # Normalize the heatmap
 heatmap = heatmap / np.maximum(contribution_tracker, 1)
 
-
-
-
 # Plotting the heatmap
+
 plt.contourf(xx, yy, heatmap, levels=100, cmap='hot', alpha=0.8)  # Heatmap
 plt.plot(bone.x, bone.y, color="white")
 plt.colorbar(label="Intensity")
 plt.xlim(nxlim, pxlim)
 plt.ylim(nylim, pylim)
-plt.xticks([nxlim, pxlim], ['Anterior', 'Posterior'])
-plt.yticks([nylim, pylim], ['Inferior', 'Superior'])
-
-
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
 plt.title("Probabilistic Heatmap of Nerve with Branches")
 plt.legend()
-plt.grid(True)
-
-special_coord = [bone.get_mid10()[1], bone.get_mid12()[1], bone.get_MID(), bone.get_TIP(), bone.get_LAT()]
-name = ['MID10', 'MID12', 'MID', 'TIP', 'LAT']
-for i, co in enumerate(special_coord):
-    print(co)
-    plt.scatter(co[0], co[1], color='blue', s=20, zorder=5)
-    if name[i] == 'MID':
-        plt.text(co[0] - 3.5, co[1], name[i], fontsize=12, zorder=6, color='white')
-    elif name[i] == 'TIP':
-        plt.text(co[0], co[1] - 1.5, name[i], fontsize=12, zorder=6, color='white')
-    else:
-        plt.text(co[0] + 0.5, co[1], name[i], fontsize=12, zorder=6, color='white')
-
-
+# plt.grid(True)
 plt.show()
