@@ -105,7 +105,7 @@ class Nerve():
     def get_branch_lines(self):
         """Generate line segments for each branch as coordinate arrays."""
         branches = []
-        print(self.nodes.values())
+        # print(self.nodes.values())
         for node in self.nodes.values():
             if node.get_coord() and node.children:
                 for child in node.children:
